@@ -1,8 +1,8 @@
 {
-  "name": "Timer",
+  "name": "timerjs",
   "author": "Daisuke MINO <daisuke.mino@gmail.com>",
   "description": "Simple timer, wraps setInterval and clearInterval.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "lib/timer",
   "license": "MIT",
   "scripts": {

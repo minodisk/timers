@@ -2,7 +2,7 @@
 Simple timer, wraps setInterval and clearInterval.
 
 ## Installation
-    $ npm install Timer
+    $ npm install timerjs
 
 ## API Documentation
 
@@ -29,7 +29,7 @@ Simple timer, wraps setInterval and clearInterval.
 ## Usage
 
 ### [repeat n-th time](https://github.com/minodisk/timer-js/blob/master/example/repeat_n-th_time.js)
-    var Timer = require('Timer');
+    var Timer = require('timerjs').Timer;
     var timer = new Timer(1000, 3);
 
     timer.addListener('timer', function () {
@@ -47,7 +47,7 @@ Simple timer, wraps setInterval and clearInterval.
     // timerComplete 3 3
 
 ### [repeat endlessly](https://github.com/minodisk/timer.js/blob/master/example/repeat_endlessly.js)
-    var Timer = require('Timer');
+    var Timer = require('timerjs').Timer;
     var timer = new Timer(1000);
 
     timer.addListener('timer', function () {
@@ -67,7 +67,7 @@ Simple timer, wraps setInterval and clearInterval.
     // ...
 
 ### [recycle](https://github.com/minodisk/timer.js/blob/master/example/recycle.js)
-    var Timer = require('Timer');
+    var Timer = require('timerjs').Timer;
     var mainTimer = new Timer(5000);
     var subTimer = new Timer(1000, 3);
 
