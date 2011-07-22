@@ -1,19 +1,22 @@
 # timer.js
-
 Simple timer, wraps setInterval and clearInterval.
 
 ## Installation
-    npm install timerjs
+    $ npm install Timer
 
 ## API Documentation
 
-### Properties
+### Class Properties
+* **TIMER** - 'timer'
+* **TIMER_COMPLETE** - 'timerComplete'
+
+### Member Properties
 * **currentCount** - \[read-only\] The total number of times the timer has fired since it started at zero.
 * **delay** - The delay, in milliseconds, between timer events.
 * **repeatCount** - The total number of times the timer is set to run.
 * **running** - \[read-only\] The timer's current state.
 
-### Methods
+### Member Methods
 * **new Timer(delay, repeatCount = 0)** - Constructs a new Timer object with the specified delay and repeatCount states.
 * **reset()** - Stops the timer, if it is running, and sets the currentCount property back to 0.
 * **start()** - Starts the timer, if it is not already running and currentCount is less than repeatCount.
@@ -25,8 +28,8 @@ Simple timer, wraps setInterval and clearInterval.
 
 ## Usage
 
-### [repeat n-th time](https://github.com/minodisk/node-timer/blob/master/example/repeat_n-th_time.js)
-    var Timer = require('../node-timer').Timer;
+### [repeat n-th time](https://github.com/minodisk/timer-js/blob/master/example/repeat_n-th_time.js)
+    var Timer = require('Timer');
     var timer = new Timer(1000, 3);
 
     timer.addListener('timer', function () {
@@ -43,8 +46,8 @@ Simple timer, wraps setInterval and clearInterval.
     // timer 3 3
     // timerComplete 3 3
 
-### [repeat endlessly](https://github.com/minodisk/node-timer/blob/master/example/repeat_endlessly.js)
-    var Timer = require('../node-timer').Timer;
+### [repeat endlessly](https://github.com/minodisk/timer.js/blob/master/example/repeat_endlessly.js)
+    var Timer = require('Timer');
     var timer = new Timer(1000);
 
     timer.addListener('timer', function () {
@@ -63,8 +66,8 @@ Simple timer, wraps setInterval and clearInterval.
     // timer 5 0
     // ...
 
-### [recycle](https://github.com/minodisk/node-timer/blob/master/example/recycle.js)
-    var Timer = require('../node-timer').Timer;
+### [recycle](https://github.com/minodisk/timer.js/blob/master/example/recycle.js)
+    var Timer = require('Timer');
     var mainTimer = new Timer(5000);
     var subTimer = new Timer(1000, 3);
 
@@ -95,4 +98,4 @@ Simple timer, wraps setInterval and clearInterval.
     // ...
 
 ## License
-Licensed under the [MIT license](https://github.com/minodisk/node-timer/raw/master/MIT-LICENSE).
+Licensed under the [MIT license](https://github.com/minodisk/timer-js/raw/master/LICENSE).
