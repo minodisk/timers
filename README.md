@@ -7,8 +7,11 @@ Simple timer, wraps setInterval and clearInterval.
 ## API Documentation
 
 ### Class Properties
-* **TIMER** - 'timer'
-* **TIMER_COMPLETE** - 'timerComplete'
+* **TIMER: 'timer'** - \[static\] Defines the value of type property of a timer event.
+* **TIMER_COMPLETE: 'timerComplete'** - \[static\] Defines the value of type property of a timerComplete event.
+
+### Constructor
+* **new Timer(delay, repeatCount = 0)** - Constructs a new Timer object with the specified delay and repeatCount states.
 
 ### Member Properties
 * **currentCount** - \[read-only\] The total number of times the timer has fired since it started at zero.
@@ -17,7 +20,6 @@ Simple timer, wraps setInterval and clearInterval.
 * **running** - \[read-only\] The timer's current state.
 
 ### Member Methods
-* **new Timer(delay, repeatCount = 0)** - Constructs a new Timer object with the specified delay and repeatCount states.
 * **reset()** - Stops the timer, if it is running, and sets the currentCount property back to 0.
 * **start()** - Starts the timer, if it is not already running and currentCount is less than repeatCount.
 * **stop()** - Stops the timer.
