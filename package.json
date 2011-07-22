@@ -1,0 +1,19 @@
+{
+  "name": "timer",
+  "version": "0.0.4",
+  "description": "Simple timer, wraps setInterval and clearInterval.",
+  "author": {
+    "name": "Daisuke MINO",
+    "email": "daisuke.mino@gmail.com",
+    "url": "http://minodisk.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "lib/timer",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test/index.js"
+  }
+}
