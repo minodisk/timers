@@ -2,6 +2,9 @@
 
 Simple timer, wraps setInterval and clearInterval.
 
+## Installation
+    npm install timerjs
+
 ## API Documentation
 
 ### Properties
