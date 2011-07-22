@@ -11,7 +11,7 @@ Simple timer, wraps setInterval and clearInterval.
 * **running** - \[read-only\] The timer's current state.
 
 ### Methods
-* **new Timer(delay, \[repeatCount\])** - Constructs a new Timer object with the specified delay and repeatCount states.
+* **new Timer(delay, repeatCount = 0)** - Constructs a new Timer object with the specified delay and repeatCount states.
 * **reset()** - Stops the timer, if it is running, and sets the currentCount property back to 0.
 * **start()** - Starts the timer, if it is not already running and currentCount is less than repeatCount.
 * **stop()** - Stops the timer.
