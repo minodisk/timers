@@ -48,7 +48,7 @@ Simple timer, wraps setInterval and clearInterval.
     // timer 3 3
     // timerComplete 3 3
 
-### [repeat endlessly](https://github.com/minodisk/timer.js/blob/master/example/repeat_endlessly.js)
+### [repeat endlessly](https://github.com/minodisk/timer-js/blob/master/example/repeat_endlessly.js)
     var Timer = require('timerjs').Timer;
     var timer = new Timer(1000);
 
@@ -68,7 +68,7 @@ Simple timer, wraps setInterval and clearInterval.
     // timer 5 0
     // ...
 
-### [recycle](https://github.com/minodisk/timer.js/blob/master/example/recycle.js)
+### [recycle](https://github.com/minodisk/timer-js/blob/master/example/recycle.js)
     var Timer = require('timerjs').Timer;
     var mainTimer = new Timer(5000);
     var subTimer = new Timer(1000, 3);
