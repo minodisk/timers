@@ -1,7 +1,7 @@
 (function () {
   var nodeunit = require('nodeunit');
   var events = require('events');
-  var Timer = require('../lib/timer.js').Timer;
+  var Timer = require('../lib/timers').Timer;
 
   var _case = {};
 
