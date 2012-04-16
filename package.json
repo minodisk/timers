@@ -1,7 +1,7 @@
 {
   "name"        :"timers",
   "version"     :"0.0.8",
-  "description" :"Simple timer, wraps setInterval and clearInterval.",
+  "description" :"Simple wrapper of setInterval and clearInterval.",
   "tags"        :["timer", "stopwatch", "ticker"],
   "author"      :{
     "name" :"Daisuke Mino",
@@ -11,9 +11,9 @@
     "type":"git",
     "url" :"https://minodisk@github.com/minodisk/timers.git"
   },
-  "engines"     :[
-    "node"
-  ],
+  "engines"     :{
+    "node":"*"
+  },
   "license"     :"MIT",
   "dependencies":{
   },
